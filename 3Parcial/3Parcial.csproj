@@ -48,6 +48,7 @@
     <Compile Include="Clases\Interface.cs" />
     <Compile Include="Clases\Perro.cs" />
     <Compile Include="Clases\sound.cs" />
+    <Compile Include="OrdenamientoGen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
