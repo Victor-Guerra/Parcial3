@@ -28,7 +28,7 @@ arr[j + 1] = key;
     }
 }
          */
-    class OrdenamientoGen<T>
+    class OrdenamientoGen<T> where T : IComparable
     {
        
         public static void insertionSort(T[] arr, int n)
@@ -40,7 +40,7 @@ arr[j + 1] = key;
                 key = arr[i];
                 j = i - 1;
 
-                while(j >= 0 && arr[j] > key)
+                while(j >= 0 && arr[j].CompareTo(key) > 0)
                 {
                     arr[j + 1] = arr[j];
                     j--;
@@ -49,5 +49,6 @@ arr[j + 1] = key;
             }
         }
 
+        
     }
 }
